@@ -80,25 +80,31 @@ if (close) {
 }
 
 // Opacity effect
-function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = 1; // Set opacity to 1 if the div is visible
-        observer.unobserve(entry.target); // Stop observing once the div is visible
-      }
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to handle the intersection observer callback
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+                entry.target.style.opacity = 1;
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Adjust the threshold value based on your needs
+    const threshold = window.innerWidth < 600 ? 0.1 : 0.5;
+
+    // Create an intersection observer instance
+    const observer = new IntersectionObserver(handleIntersection, { threshold });
+
+    // Get all sections on the page
+    const sections = document.querySelectorAll('.section-tag');
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
     });
-  }
-
-  // Create an intersection observer instance
-  const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
-
-  // Get all divs with the "section" class on the page
-  const sections = document.querySelectorAll('.section-tag');
-
-  // Observe each div
-  sections.forEach(section => {
-    observer.observe(section);
-  });
+});
 
 //   Text typing out animation
 //   document.addEventListener('DOMContentLoaded', function () {
