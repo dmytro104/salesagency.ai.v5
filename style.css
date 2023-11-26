@@ -60,7 +60,7 @@ body {
 
 .logo-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .logo-section p {
