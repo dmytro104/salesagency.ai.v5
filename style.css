@@ -203,6 +203,11 @@ h3 {
     margin-left: 48px;
 }
 
+.navbar .nav-right .list:hover {
+    border-bottom: 2px solid var(--purple);
+    cursor: pointer;
+}
+
 .navbar .nav-right .first-button {
     display: none;
 }
