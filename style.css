@@ -754,6 +754,10 @@ h3 {
         display: none;
     }
 
+    .left-section-1 {
+        margin-right: 0;
+    }
+
     /* Section 2 */
     .left-section-2 {
         display: none;
