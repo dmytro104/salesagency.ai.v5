@@ -530,6 +530,14 @@ h3 {
 }
 
 /* Screen size adjustments */
+
+@media (min-width: 1800px) {
+    #section-3 .grid-section {
+        margin-bottom: 60px;
+    }
+
+}
+
 @media (max-width: 1300px) {
     
     /* Hero */
