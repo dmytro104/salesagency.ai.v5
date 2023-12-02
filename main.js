@@ -19,6 +19,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Adjusting height of navbar container
+function updateContainerHeight() {
+    var fixedElement = document.querySelector('.navbar');
+    var container = document.querySelector('.nav-container');
+    container.style.height = fixedElement.offsetHeight + 'px';
+    requestAnimationFrame(updateContainerHeight);
+}
+
+updateContainerHeight()
+  
+
 // For new nav bar on smaller screens
 const bar = document.querySelector('.bar');
 const barSection = document.querySelector('.mobile-nav');
