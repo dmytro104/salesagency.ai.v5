@@ -1052,7 +1052,12 @@ iframe {
         height: 250px;
     }
 
-
+    .name-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+	
     /* Grid section */
     #section-3 .section-body {
         line-height: 24px;
