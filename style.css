@@ -1,26 +1,4 @@
-/*Loading in fonts */
-@font-face {
-    font-family: 'AeonikFono-Medium';
-    src: url('Fonts/AeonikFono-Medium.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'AeonikFono-Regular';
-    src: url('Fonts/AeonikFono-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'AeonikPro-Medium';
-    src: url('Fonts/AeonikPro-Medium.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'AeonikPro-Regular';
-    src: url('Fonts/AeonikPro-Regular.otf') format('opentype');
-}
-
 /* Variables */
-
 :root {
     --purple: #8A31EF;
     --black: #161616;
@@ -93,7 +71,7 @@ body {
 
 .button {
     display: inline-flex;
-    font-family: 'AeonikFono-Regular';
+    font-family: 'Space Mono', monospace;
     font-size: 16px;
     background-color: var(--purple);
     text-decoration: none;
@@ -107,7 +85,7 @@ body {
 }
 
 h1 {
-    font-family: 'AeonikPro-Medium';
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 42px;
     margin-top: 0;
@@ -127,7 +105,7 @@ span {
 }
 
 .section-body {
-    font-family: 'AeonikPro-Regular';
+    font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     line-height: 28px;
     margin-top: 0px;
@@ -146,7 +124,7 @@ span {
 }
 
 .section-start {
-    font-family: 'AeonikFono-Regular';
+    font-family: 'Space Mono', monospace;
     font-weight: 500;
     font-size: 18px;
     margin-top: 0px;
@@ -163,14 +141,14 @@ span {
 }
 
 h3 {
-    font-family: 'AeonikPro-Medium';
+    font-family: 'DM Sans', sans-serif;
     font-size: 28px;
     margin-bottom: 0;
     font-weight: 500;
 }
 
 .sap p {
-    font-family: 'AeonikPro-Regular';
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;  
     margin-bottom: 48px; 
@@ -178,7 +156,7 @@ h3 {
 }
 
 .dmytro p {
-    font-family: 'AeonikPro-Regular';
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;  
     margin-bottom: 0px; 
@@ -196,7 +174,8 @@ iframe {
 .navbar {
     box-sizing: border-box;
     background-color: var(--black);
-    font-family: 'AeonikPro-Regular';
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -317,7 +296,7 @@ iframe {
 }
 
 #hero .hero-right .hero-vid p {
-    font-family: 'AeonikFono-Regular';   
+    font-family: 'Space Mono', monospace;   
     color: var(--purple);
     font-size: 18px;
     font-weight: 400;
@@ -454,7 +433,7 @@ iframe {
 }
 
 .team-member h4 {
-    font-family: 'AeonikFono-Regular';
+    font-family: 'Space Mono', monospace;
     margin-top: 2px;
     margin-bottom: 0;
     font-weight: 500;
@@ -502,7 +481,7 @@ iframe {
 }
 
 .desc-box p {
-    font-family: 'AeonikPro-Regular';
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;  
     line-height: 24px;
@@ -551,7 +530,8 @@ iframe {
 .section-footer {
     background-color: var(--black);
     color: var(--white);
-    font-family: 'AeonikPro-Regular';
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
     width: 100%
 }
 
@@ -710,7 +690,7 @@ iframe {
     }
 
     .navbar .bottom-nav {
-        font-family: 'AeonikFono-Regular';
+        font-family: 'Space Mono', monospace;
         color: var(--light-purple);
         font-weight: 400;
         display: flex;
@@ -1050,9 +1030,14 @@ iframe {
         font-size: 16px;
     }
 
+    
     .vid-button {
         display: flex;
         justify-content: center;
+    }
+
+    #hero .vid-button {
+        width: 388px;
     }
 
     /* Team section */
@@ -1117,6 +1102,10 @@ iframe {
     iframe {
         width: 320px;
         height: 165px;
+    }
+
+    #hero .vid-button {
+        width: 320px;
     }
 
 }
