@@ -612,6 +612,31 @@ iframe {
     color: var(--white);
 }
 
+
+/* Terms and privacy pages */
+#terms, #policy {
+    color: var(--black);
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 96px 64px;
+    box-sizing: border-box;
+}
+
+#terms p,
+#terms ol,
+#terms u,
+#terms ul,
+#policy p,
+#policy ol,
+#policy u,
+#policy ul {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+
 /* Screen size adjustments */
 @media (max-width: 1300px) {
     
@@ -735,9 +760,13 @@ iframe {
 @media (max-width: 1100px) {
 
     /* Multiple sections */
-    #hero, #section-1, #section-2, #team-section, #section-3 {
+    #hero, #section-1, #section-2, #team-section, #section-3, #terms, #policy {
         padding: 64px 96px;
         margin: 0;
+    }
+
+    #terms, #policy {
+        margin-top: 50px;
     }
 
     h1 {
@@ -986,9 +1015,13 @@ iframe {
 @media (max-width: 650px) {
 
     /* Multiple sections */
-    #hero, #section-1, #section-2, #team-section, #section-3 {
+    #hero, #section-1, #section-2, #team-section, #section-3, #terms, #policy {
         padding: 50px 25px;
         margin: 0;
+    }
+
+    #terms, #policy {
+        margin-top: 50px;
     }
 
     h1 {
